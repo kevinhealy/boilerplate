@@ -49,12 +49,15 @@ Tests could also be run from the console by executing `npm test`, just like regu
 
 ## How to run tests remotely on testnet
 When your tests succeed locally, you can run them on testnet.
-1. Provide a private key with funds in `tests/runontestnet.js`
 
-You can create a testnet wallet here: https://bitcoinpaperwallet.com/bitcoinpaperwallet/generate-wallet.html?design=alt-testnet
+You'll first need a funded testnet address.
+
+Create a testnet address here: https://bitcoinpaperwallet.com/bitcoinpaperwallet/generate-wallet.html?design=alt-testnet
 
 You can then load that address using this faucet: https://faucet.bitcoincloud.net
 
+
+1. Provide the private key of your funded testnet address in `tests/runontestnet.js`
 ```
 const key = ''
 ```
